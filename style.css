@@ -6,13 +6,24 @@
 
 .container {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   background: #304452;
 }
 
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 20px 0;
+  color: #e3f9ff;
+  text-transform: uppercase;
+  text-shadow: 3px 0px 3px #e3f9ff70, 0px 3px 4px #e3f9ff80;
+}
+
 .calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   box-shadow: -0px 3px 10px rgba(0, 0, 10, 0.8);
   background-color: #e3f9ff;
   border-radius: 10px;
